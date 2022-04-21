@@ -4,8 +4,6 @@ import { getTodos } from "../redux/actions/todoActions";
 
 const Todos = () => {
   const { todos, loading } = useSelector((state) => state.todo);
-  console.log("todos", todos);
-  console.log("loading", loading);
   const dispatch = useDispatch();
 
   const renderTodo = () => {
